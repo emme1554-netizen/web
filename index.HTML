@@ -1,0 +1,19 @@
+function doGet(e) {
+  return HtmlService.createTemplateFromFile('xxx').evaluate()
+      .setTitle("web app")
+      .addMetaTag('viewport','width=device-width , initial-scale=1')
+      .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+}
+
+----------------------------------------------------------------
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>web app</title>
+</head>
+<body>
+    <iframe style="height: 100vh;" src="https://script.google.com/macros/s/AKfycbxH-O_8VNxHGIzUWgunOzDlQbE5LTDLPgJB6uwvntL6B2ESkd0piW4ZKP7aP1BBQ_By/exec" frameborder="0" width="100%" height="100%"></iframe>
+</body>
+</html>
